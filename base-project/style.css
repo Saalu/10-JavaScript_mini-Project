@@ -1,0 +1,44 @@
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --primary: rebeccapurple;
+    --light: #fff;
+    --dark: #333;
+    --shadow: 12px 12px 1.5px rgba(0,0,0,.3)
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+/* Start styling */
+
+
+
+
+
+
+
+
+
+/* footer style */
+footer{
+    position: absolute;
+    bottom: 20px;
+    background: var(--dark);
+    color:var(--light);
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+footer span{
+    color: orchid;
+    font-weight:bold;
+}
