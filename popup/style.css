@@ -10,7 +10,8 @@
     --light: #fff;
     --dark: #333;
     --shadow: 2px 2px 1.5px rgba(0,0,0,.3);
-
+    --red: #ff0057;
+    --green:#45EDC6;
 }
 
 body{
@@ -32,6 +33,7 @@ body{
     padding: 1rem;
     border-radius: 4px;
     opacity: .8;
+    z-index: 100;
 }
 .repo:hover{
     opacity: 1;
@@ -39,9 +41,75 @@ body{
 }
 .repo a{
     color: var(--light);
-
 }
 /* Start styling */
+
+
+button{
+    padding: 1rem;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+.popup-container{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    background:rgba(0,0,0,0.5);
+
+    display: none;
+    justify-content: center;
+    align-items:center;
+
+}
+
+.popup-container.active{
+    display: flex;
+}
+#open{
+    background:#45EDC6;
+    font-size: 1.2rem;
+}
+
+.popup{
+    background: #fff;
+    padding: 2rem;
+    width: 500px;
+position: relative;
+box-shadow: var(--shadow);
+border-radius:10px;
+}
+
+.popup h1{
+    margin-bottom: 10px;
+}
+
+.popup button{
+    background:var(--red);
+    font-size: 1.5rem;
+    padding: 0 0.5rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
